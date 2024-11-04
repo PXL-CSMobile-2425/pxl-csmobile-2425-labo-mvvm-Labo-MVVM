@@ -43,7 +43,7 @@ In dit labo maken we een eenvoudige TODO applicatie, gebruik makend van het MVVM
                    Text="">
             </Entry>
             <Button Grid.Column="1" CornerRadius="45" Padding="0"
-                mi:MauiIcon.Value="{mi:FluentFilled Icon=AddCircle32Filled, IconSize=Large, IconColor={StaticResource White}}" />
+                Text="+" />
         </Grid>
 
         <!-- List of To-Dos -->
@@ -137,6 +137,7 @@ public class TodoItem
 ```
 - Implementeer de *INotifyPropertyChanged* interface 
 > ***Voorlopig gebruiken we enkel de Title en IsCompleted properties***
+- Zorg ervoor dat *TodoListViewModel* een lijst van *TodoItem*s inlaadt in de constructor
 
 ### MVVM
 - Koppel nu het ViewModel aan de View:
